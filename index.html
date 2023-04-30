@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="tooltip.js"></script>
+    <script src="tooltip-shadow.js"></script>
+    <script src="confirm-link.js"></script>
+    <script src="custom-div.js"></script>
+
+    <style>
+        html {
+            --primary-color: rgb(55, 107, 82);
+        }
+
+        div {
+            border: 2px solid yellow;
+        }
+
+        .highlight {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <show-tooltip text=" are great!">
+        <span class="highlight">Web Components</span>
+    </show-tooltip>
+
+    <show-tooltip-shadow text=" are pretty useful!">Templates</show-tooltip-shadow>
+
+    <a is="confirm-link" href="https://www.google.com">Google</a>
+
+    <div is="custom-div" text="Hello, attr!">This from slots!</div>
+</body>
+
+</html>
